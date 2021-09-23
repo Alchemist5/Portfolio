@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif, Arial, Helvetica;
+}
+
+body {
+    background-color: #c4c4c4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+    padding: 30px 20px;
+    animation: slideFromRight 2s ease-in-out .3s;
+}
+
+.main-header {
+    color: #0c103a;
+}
+
+.main-header span {
+    color: #362a9c;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #0c103a;
+}
+
+.navbar li:hover {
+    background-color: #180c4c;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+}
+
+.navbar li:hover a {
+    color: #fff;
+}
+
+.portfolio {
+    margin-top: 30px;
+    animation: fadeIn 3s ease-in-out;
+    transition: all 2s ease-in;
+}
+
+.portfolio-wrapper {
+    color: #0c103a;
+}
+
+.portfolio-wrapper > div {
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .55);
+}
+
+.portfolio-wrapper > div:hover {
+    cursor: pointer;
+    transform: scale(.97);
+}
+
+.portfolio-wrapper > div:first-child p, .portfolio-wrapper > div:nth-child(2) p, .portfolio-wrapper > div:nth-child(3) {
+    font-size: 20px;
+}
+
+.portfolio-wrapper > div:first-child, .portfolio-wrapper > div:nth-child(2), .portfolio-wrapper > div:nth-child(3) {
+    text-align: center;
+    background-color: #969696;
+    margin: 0px 30px 20px;
+    padding: 30px;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact p {
+    margin-bottom: 15px;
+}
+
+.contact button {
+    padding: 15px;
+    background-color: #180c4c;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .55);
+}
+
+.contact button:hover {
+    transform: scale(.98);
+    cursor: pointer;
+}
+
+.portfolio-wrapper > div:nth-child(3) p {
+    margin-bottom: 20px;
+}
+
+.portfolio-wrapper > div:nth-child(3) li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.fa-check {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #969696;
+    color: #0c103a;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0px;
+}
+
+.socials .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #180c4c;
+    padding: 13px 16px;
+    transition: all .8s ease-in-out;
+}
+
+.socials div {
+    margin-bottom: 10px;
+}
+
+.socials li:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+.socials p {
+    margin-bottom: 15px;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width:500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}
