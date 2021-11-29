@@ -9,7 +9,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="nav-container">
+        <nav id="side-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header id="header">
         <div class="main-header">
             <h1>Alchemist <span>Dev</span></h1>
         </div>
@@ -24,39 +35,89 @@
                 </ul>
             </nav>
         </div>
+
+        <button id="menu-bar">
+            <i class="fa fa-bars 2x"></i>
+        </button>
     </header>
 
     <section class="portfolio">
         <div class="portfolio-wrapper">
-            <div>
-                <p>I am a Front-end Web Developer with experience in applying HTML, CSS & Javascript in web development.</p>
-                <div class="contact">
-                    <p>Need my services?</p>
-                    <button>Contact Me</button>
+            <div class="profile-wrapper">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="portfolio.png" alt="This is a pic">
+                    </div>
+                    <p>I am Josphat Otieno, an experienced Front-end Web Developer with expertise in transforming my clients' design ideas into UI and UX-friendly web applications by writing clean and reusable code that surpass your expectations.</p>
+                    <div class="contact">
+                        <p>Need my services?</p>
+                        <button class="sign-up">Contact Me</button>
+                    </div>
                 </div>
             </div>
 
             <div>
-                <p>I will make your businesses more visible through development of SEO optimized websites. </p>
-            </div>
-
-            <div>
-                <p>Other services I offer include:</p>
-                <ul>
-                    <li><i class="fa fa-check"></i>SEO</li>
-                    <li><i class="fa fa-check"></i>Content Marketing</li>
-                    <li><i class="fa fa-check"></i>Graphic Design</li>
-                </ul>
+                <div class="services">
+                    <h3>My Services</h3>
+                    <p>
+                        <i class="fa fa-check"></i>
+                        Build responsive websites from scratch as per clients’ designs that can have amazing features such as; CSS & JavaScript animations, hover effects, bouncing & slider navbar, modals.
+                    </p>
+    
+                    <p>
+                        <i class="fa fa-check"></i>
+                        Contribute on existing project to make it successful by adding or removing functionalities.
+                    </p>
+    
+                    <p>
+                        <i class="fa fa-check"></i>
+                        To fix bugs on your website.
+                    </p> 
+                </div>
+    
+                <div class="skills">
+                    <h3>Skills Stack</h3>
+                    <ul>
+                        <li><i class="fa fa-check"></i>HTML5</li>
+                        <li><i class="fa fa-check"></i>CSS3</li>
+                        <li><i class="fa fa-check"></i>JavaScript</li>
+                        <li><i class="fa fa-check"></i>Git</li>
+                    </ul>
+                </div>
             </div>
         </div>
+            
     </section>
 
+    <section class="modal-wrapper">
+        <div class="modal">
+            <form class="modal-form">
+                <div class="form-title">
+                    <h2>Register to access my premium newsletter</h2>
+                </div>
+
+                <div id="name">
+                    <input type="text" name="" id="" class="name" placeholder="Enter your name">
+                </div>
+
+                <div id="email">
+                    <input type="email" name="" id="" class="email" placeholder="Enter your email">
+                </div>
+
+               <div id="message">
+                   <textarea id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="socials">
             <p>Find Me:</p>
             <div>
                 <ul>
-                    <li><a href="www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://facebook.com/josphat.humphrey" target="_blank"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://twitter.com/humphrey_oj" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="https://github.com/Alchemist5" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -64,7 +125,8 @@
             </div>
         </div>
 
-        <p>Copyright  &copy; 2021. All Rights Reserved. Alchemist Media </p>
+        <p>Copyright &copy; 2021. All Rights Reserved. Alchemist Media </p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html> 
