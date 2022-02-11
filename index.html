@@ -4,25 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alchemist | Portfolio</title>
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="style.css">
+    <title>Josphat Otieno | Frontend Developer</title>
 </head>
 <body>
-    <div class="nav-container">
-        <nav id="side-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
 
-    <header id="header">
+    <header id="header" class="top">
         <div class="main-header">
-            <h1>Alchemist <span>Dev</span></h1>
+            <h1>Josphat <span>Otieno</span></h1>
         </div>
 
         <div class="navbar">
@@ -36,9 +27,22 @@
             </nav>
         </div>
 
-        <button id="menu-bar">
-            <i class="fa fa-bars 2x"></i>
-        </button>
+        <div class="menu-wrapper">
+            <input type="checkbox" id="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div id="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section class="portfolio">
@@ -46,54 +50,129 @@
             <div class="profile-wrapper">
                 <div class="profile">
                     <div class="profile-image">
-                        <img src="portfolio.png" alt="This is a pic">
+                        <img src="images/portfolio.png" alt="This is a pic">
                     </div>
-                    <p>I am Josphat Otieno, an experienced Front-end Web Developer with expertise in transforming my clients' design ideas into UI and UX-friendly web applications by writing clean and reusable code that surpass your expectations.</p>
-                    <div class="contact">
-                        <p>Need my services?</p>
-                        <button class="sign-up">Contact Me</button>
-                    </div>
-                </div>
-            </div>
 
-            <div>
-                <div class="services">
-                    <h3>My Services</h3>
-                    <p>
-                        <i class="fa fa-check"></i>
-                        Build responsive websites from scratch as per clients’ designs that can have amazing features such as; CSS & JavaScript animations, hover effects, bouncing & slider navbar, modals.
-                    </p>
-    
-                    <p>
-                        <i class="fa fa-check"></i>
-                        Contribute on existing project to make it successful by adding or removing functionalities.
-                    </p>
-    
-                    <p>
-                        <i class="fa fa-check"></i>
-                        To fix bugs on your website.
-                    </p> 
-                </div>
-    
-                <div class="skills">
-                    <h3>Skills Stack</h3>
-                    <ul>
-                        <li><i class="fa fa-check"></i>HTML5</li>
-                        <li><i class="fa fa-check"></i>CSS3</li>
-                        <li><i class="fa fa-check"></i>JavaScript</li>
-                        <li><i class="fa fa-check"></i>Git</li>
-                    </ul>
+                    <div>
+                        <p>I am Josphat Otieno, an experienced Front-end Web Developer with expertise in transforming my clients' design ideas into UI and UX-friendly web applications by writing clean and reusable code that surpass your expectations.</p>
+                        <div class="contact">
+                            <p>Need my services?</p>
+                            <button class="sign-up">Contact Me</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-            
+    </section>
+
+    <section class="services">
+        <div class="services-title">
+            <h3>MY SERVICES</h3>
+            <div></div>
+        </div>
+        
+        <div class="services-items">
+            <div class="services-item">
+                <i class="fa fa-wrench"></i>
+                <p>
+                    
+                    Build responsive websites from scratch as per clients’ designs that can have amazing features such as; CSS & JavaScript animations, hover effects, bouncing & slider navbar, modals.
+                </p>
+            </div>
+
+            <div class="services-item">
+                <i class="fas fa-handshake"></i>
+                <p>
+                   
+                    Contribute on existing project to make it successful by adding or removing functionalities.
+                </p>
+            </div>
+
+            <div class="services-item">
+                <i class="fa fa-tools"></i>
+                <p>
+                    To fix bugs on your website.
+                </p> 
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="skills-wrapper">
+            <div class="skills-title">
+                <h3>SKILLS STACK</h3>
+                <div></div>
+            </div>
+
+            <div class="skills-items">
+                <div class="skills-item">
+                    <p>HTML5</p>
+                    <i class="fa fa-html5"></i>
+                </div>
+
+                <div class="skills-item">
+                    <p>CSS3</p>
+                    <i class="fa fa-css3"></i>
+                </div>
+
+                <div class="skills-item">
+                    <p>JavaScript</p>
+                    <i class="fa fa-js-square"></i>
+                </div>
+
+                <div class="skills-item">
+                    <p>Git</p>
+                    <i class="fa fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="projects-wrapper">
+            <div class="projects-title">
+                <h3>PROJECTS</h3>
+                <div></div>
+            </div>
+
+            <div class="projects-items">
+                <div class="project-item">
+                    <img src="images/to-do.png" alt="">
+                    <div class="project-name">
+                        <a href="">To Do App</a>
+                    </div>
+                    
+                </div>
+
+                <div class="project-item">
+                    <img src="images/registry-form.png" alt="">
+                    <div class="project-name">
+                        <a href="">Registry Form</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/login-signup.png" alt="">
+                    <div class="project-name">
+                        <a href="">Input Validation</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/degrees- celsius -converter.png" alt="">
+                    <div class="project-name">
+                        <a href="">Degrees Celsius to Fehrenheit Converter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="modal-wrapper">
         <div class="modal">
             <form class="modal-form">
                 <div class="form-title">
-                    <h2>Register to access my premium newsletter</h2>
+                    <h2>Contact Me</h2>
                 </div>
 
                 <div id="name">
@@ -112,6 +191,7 @@
             </form>
         </div>
     </section>
+
     <footer>
         <div class="socials">
             <p>Find Me:</p>
