@@ -382,13 +382,13 @@ textarea:focus {
     height: 400px;
 }
 
-.project-name {
+a {
     text-align: center;
     padding: 20px 0;
     background-image: linear-gradient(45deg, #1f16c1,71%, #ef0833);
 }
 
-.project-name a {
+ a {
     color: #fff;
 }
 
