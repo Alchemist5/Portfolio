@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
     <link rel="stylesheet" href="menu.css">
-=======
-    <title>Alchemist | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
->>>>>>> 145b5e4b832e82a4ed5142137c4bbf4f6fd71d3c
     <link rel="stylesheet" href="style.css">
     <title>Josphat Otieno | Frontend Developer</title>
 </head>
 <body>
-
     <header id="header" class="top">
         <div class="main-header">
             <h1>Josphat <span>Otieno</span></h1>
@@ -42,7 +37,7 @@
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li class="contact-me"><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -50,7 +45,7 @@
         </div>
     </header>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="portfolio-wrapper">
             <div class="profile-wrapper">
                 <div class="profile">
@@ -58,12 +53,20 @@
                         <img src="images/portfolio.png" alt="This is a pic">
                     </div>
 
-                    <div>
-                        <p>I am Josphat Otieno, an experienced Front-end Web Developer with expertise in transforming my clients' design ideas into UI and UX-friendly web applications by writing clean and reusable code that surpass your expectations.</p>
-                        <div class="contact">
-                            <p>Need my services?</p>
-                            <button class="sign-up">Contact Me</button>
+                    <div class="profile-info">
+                        <div>
+                            <p>Hi, I am an aspiring Front-end Developer</p>
+                            <p>I have expertise in transforming my clients' design ideas into UI and UX-friendly web applications by writing clean and reusable code. Currently, I am well conversant with HTML5,CSS3,Vanilla JavaScript and Git</p>
                         </div>
+                        
+                        <div class="contact">
+                                <!-- <p>Need my services?</p>
+                                <button class="sign-up">Contact Me</button> -->
+                                <a href="#projects" class="view-projects"> My Projects  <i class="fa fa-long-arrow-down"></i></a>
+                        </div>
+    
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -133,7 +136,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects">
         <div class="projects-wrapper">
             <div class="projects-title">
                 <h3>PROJECTS</h3>
@@ -144,7 +147,11 @@
                 <div class="project-item">
                     <img src="images/to-do.png" alt="">
                     <div class="project-name">
-                        <a href="">To Do App</a>
+                        <a href="style.css">To Do App</a>
+                    </div>
+
+                    <div class="project-description">
+                        <p>To Do App</p>
                     </div>
                     
                 </div>
@@ -154,6 +161,9 @@
                     <div class="project-name">
                         <a href="">Registry Form</a>
                     </div>
+                    <div class="project-description">
+                        <p>Registry Form</p>
+                    </div>
                 </div>
 
                 <div class="project-item">
@@ -161,12 +171,19 @@
                     <div class="project-name">
                         <a href="">Input Validation</a>
                     </div>
+                    <div class="project-description">
+                        <p>Input Validation</p>
+                    </div>
                 </div>
 
                 <div class="project-item">
                     <img src="images/degrees- celsius -converter.png" alt="">
                     <div class="project-name">
                         <a href="">Degrees Celsius to Fehrenheit Converter</a>
+                    </div>
+
+                    <div class="project-description">
+                        <p>Degrees Celsius to Fehrenheit Converter</p>
                     </div>
                 </div>
             </div>
@@ -197,6 +214,7 @@
         </div>
     </section>
 
+    <a href="#portfolio" class="to-top"><i class="fa fa-angle-up"></i></a>
     <footer>
         <div class="socials">
             <p>Find Me:</p>

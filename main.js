@@ -2,22 +2,24 @@ const header = document.querySelector('.main-header');
 const sideNav = document.querySelector('#side-nav');
 const menuBar = document.querySelector('#menu-bar');
 const navContainer = document.querySelector('.nav-container');
-const signUp = document.querySelector('.sign-up');
+const contactMe = document.querySelector('.contact-me');
+console.log(contactMe);
 const modalWrapper = document.querySelector('.modal-wrapper');
 const profileWrapper = document.querySelector('.profile-wrapper');
 const headr = document.getElementById('header');
 const navbar = document.querySelector('.navbar');
+const portfolio = document.querySelector('#portfolio');
 const serviceItems = document.querySelectorAll('.services-item')
 const skillItems = document.querySelectorAll('.skills-item')
-const projectItems = document.querySelectorAll('.project-item')
+const projectItems = document.querySelectorAll('.project-item');
+const footer = document.querySelector('footer');
 
-// Sliding navbar
+// Bounce back navbar
 let scrolled = false;
 
 window.onscroll = () => {
     if(window.pageYOffset > 100) {
         headr.classList.remove('top');
-        navbar.style.box = " "
         if(!scrolled) {
             headr.style.transform = 'translateY(-70px)';
         }
@@ -32,7 +34,7 @@ window.onscroll = () => {
     }
 }
 
-signUp.addEventListener('click', () => {
+contactMe.addEventListener('click', () => {
     modalWrapper.style.display = 'flex';
 })
 
@@ -113,3 +115,36 @@ const scrollAnimation3 = () => {
 window.addEventListener('load', scrollAnimation3);
 window.addEventListener('resize', scrollAnimation3);
 window.addEventListener('scroll', scrollAnimation3);
+
+
+
+// const footerh = document.documentElement.clientHeight;
+// console.log(bottom);
+// console.log(footerh);
+
+const isInViewport4 = (footer) => {
+    const top = footer.getBoundingClientRect().top;
+    return (
+        top < (window.innerHeight || document.documentElement.clientHeight)
+    )
+}
+
+const isOutViewport4 = (footer) => {
+    const top = footer.getBoundingClientRect().top;
+    return (
+        top > (window.innerHeight || document.documentElement.clientHeight)
+    )
+}
+
+const scrollAnimation4 = () => {
+    if(isInViewport4(footer)) {
+        document.querySelector('.to-top').classList.add('show-top')
+    } else if(isOutViewport4(footer)) {
+        document.querySelector('.to-top').classList.remove('show-top')
+    }
+}
+
+window.addEventListener('load', scrollAnimation4);
+window.addEventListener('resize', scrollAnimation4);
+window.addEventListener('scroll', scrollAnimation4);
+
