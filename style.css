@@ -48,10 +48,6 @@ header {
     color: #362a9c;
 }
 
-.navbar {
-    box-shadow: 2px 4px 6px 6px rgb(0 0 0 / 9%);
-}
-
 .navbar li {
     display: inline-block;
     list-style: none;
@@ -152,7 +148,6 @@ textarea:focus {
     animation: slideRight 4s ease-in-out forwards;
 }
 
-.portfolio,
 .services,
 .skills,
 .projects {
@@ -169,18 +164,12 @@ textarea:focus {
     padding: 20px 30px;
     margin-bottom: 40px;
     border-radius: 10px;
-    text-align: center;
     animation: slideFromLeft 2.5s ease-in-out;
 }
 
-/* .profile > p {
-    margin-bottom: 30px;
-} */
-
 .profile {
     display: flex;
-    flex-direction: column;
-    align-items: center
+    justify-content: space-around;
 }
 
 .profile p,
@@ -190,19 +179,22 @@ textarea:focus {
 
 .profile-image {
     margin-bottom: 30px;
-    height: 150px;
-    width: 150px;
+    margin-right: 50px;
 }
 
-.profile img {
+.profile-image img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 
+.profile-info {
+    align-items: center;
+}
+
 .profile-info > div:first-child p {
-    line-height: 25px;
+    line-height: 35px;
 }
 
 .profile-info > div:first-child p:first-child {
@@ -213,32 +205,11 @@ textarea:focus {
 }
 
 .contact {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .contact p {
     margin-bottom: 15px;
-}
-
-/* .contact .sign-up {
-    margin-top: 13px;
-    padding: 15px 25px;
-    background-image: linear-gradient( 45deg, #1f16c1,71%, #ef0833);
-    color: #fff;
-    outline: none;
-    border: none;
-    border-radius: 0 23px;
-    box-shadow: 2px 4px 6px 6px rgba(0, 0, 0, .18);
-}
-
-.contact button:hover {
-    transform: scale(.98);
-    cursor: pointer;
-} */
-
-.profile-info > div:nth-child(2) {
-    display: flex;
-    justify-content: center;
 }
 
 .view-projects {
@@ -253,8 +224,9 @@ textarea:focus {
     box-shadow: -1px 2px 6px 6px rgba(0, 0, 0, 0.131);
 }
 
-.contact .fa-long-arrow-down {
-    font-size: 20px;
+.contact .fa-arrow-down {
+    font-size: 15px;
+    margin-left: 10px;
     animation: slideDown 1s ease-in-out infinite;
 }
 
@@ -393,13 +365,12 @@ textarea:focus {
 .projects-items {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+    gap: 30px; 
 }
 
 .project-item {
     border-radius: 23px;
     box-shadow: 2px 4px 6px 6px rgb(0 0 0 / 9%);
-    position: relative;
     opacity: 0;
     transform: scale(0);
     transition: all .9s ease-in-out;
@@ -411,42 +382,44 @@ textarea:focus {
 }
 
 .project-description {
-    position: absolute;
-    top: 0%;
-    height: 100%;
-    width: 100%;
+    color: #000;
+    padding: 30px 20px;
+}
+
+.project-description p {
+    margin-bottom: 30px;
+}
+
+.project-description > div a {
+    background-color: #0d42ee;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    z-index: 10;
-    transition: all .7s ease-in-out;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.project-description > div a:first-child {
+    margin-right: 10px;
+}
+
+.project-description > div a:nth-child(2) {
+    background-color: #e8e7e7;
+    color: #0d42ee;
+    border: 1px solid #0d42ee;
 }
 
 .project-item:hover {
     cursor: pointer;
 }
 
-.project-item:hover .project-description {
-    background-color: rgba(30, 123, 230, 0.87);
-    opacity: 1;
+.project-img {
+    width: 300px;
+    height: 300px;
 }
 
 .project-item img {
     object-fit: cover;
     width: 100%;
-    height: 400px;
-}
-
-.project-name {
-    text-align: center;
-    padding: 20px 0;
-    background-image: linear-gradient(45deg, #1f16c1,71%, #ef0833);
-}
-
- .project-name a {
-    color: #fff;
+    height: 100%;
 }
 
 .to-top {
@@ -567,8 +540,13 @@ footer {
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
-    header {
+    header,
+    .profile {
         flex-direction: column;
+    }
+
+    .profile {
+        align-items: center;
     }
 
     .main-header {
@@ -621,6 +599,11 @@ footer {
 
     .menu-wrapper {
         display: block;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
     }
 
     .services {
