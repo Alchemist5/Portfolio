@@ -3,7 +3,6 @@ const sideNav = document.querySelector('#side-nav');
 const menuBar = document.querySelector('#menu-bar');
 const navContainer = document.querySelector('.nav-container');
 const contactMe = document.querySelector('.contact-me');
-
 const modalWrapper = document.querySelector('.modal-wrapper');
 const profileWrapper = document.querySelector('.profile-wrapper');
 const headr = document.getElementById('header');
