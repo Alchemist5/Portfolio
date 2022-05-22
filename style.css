@@ -476,21 +476,17 @@ footer {
 }
 
 .socials li {
+    cursor: pointer;
     display: inline-block;
     margin-right: 10px;
     padding: 13px 16px; 
-    background-image: linear-gradient(45deg, #1b166f, #ef0833);
+    background-image: linear-gradient(45deg, #0a092e7e, #0d42ee);
     border-radius: 50%;
     transition: all .8s ease-in-out;
 }
 
 .socials div {
     margin-bottom: 10px;
-}
-
-.socials li:hover {
-    cursor: pointer;
-    background-image: linear-gradient(45deg, #0a092e7e, #0d42ee);
 }
 
 .socials p {
@@ -567,10 +563,6 @@ footer {
         align-items: center;
     }
 
-    .main-header {
-        margin-bottom: 10px;
-    }
-
     .services-items {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -625,7 +617,12 @@ footer {
     }
 
     .services {
+        padding: 20px 0;
         margin-bottom: 20px;
+    }
+
+    #projects {
+        padding: 20px 0;
     }
 
     .services-items,
