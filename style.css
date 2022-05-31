@@ -238,7 +238,7 @@ textarea:focus {
 }
 
 /* Services */
-.services {
+#services {
     padding: 30px;
 }
 
@@ -257,13 +257,13 @@ textarea:focus {
 
 .services-item {
     padding: 50px 30px;
-    border-radius: 0 30px;
+    border-radius: 0 10px;
     box-shadow: 1px 3px 4px 4px rgb(0 0 0 / 20%);
     text-align: center;
     background-color: #fff;
     transform: scale(0);
     opacity: 0;
-    transition: all .7s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .services-item.show {
@@ -272,7 +272,6 @@ textarea:focus {
 }
 
 .services-item:hover {
-    cursor: pointer;
     transform: scale(.98);
 }
 
@@ -328,13 +327,13 @@ textarea:focus {
 
 .skills-item {
     padding: 50px 30px;
-    border-radius: 30px 0;
+    border-radius: 0 10px;
     text-align: center;
     background-color: #fff;
     box-shadow: 1px 3px 4px 4px rgb(0 0 0 / 20%);
     transform: scale(0);
     opacity: 0;
-    transition: all .75s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .skills-item.show {
@@ -343,7 +342,6 @@ textarea:focus {
 }
 
 .skills-item:hover {
-    cursor: pointer;
     transform: scale(.98);
 }
 
@@ -391,7 +389,7 @@ textarea:focus {
     box-shadow: 1px 3px 4px 4px rgb(0 0 0 / 20%);
     opacity: 0;
     transform: scale(0);
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .project-item.show {
@@ -429,7 +427,6 @@ textarea:focus {
 }
 
 .project-item:hover {
-    cursor: pointer;
     transform: scale(1.02);
     box-shadow: 2px 4px 6px 6px rgb(0 0 0 / 25%);
 }
