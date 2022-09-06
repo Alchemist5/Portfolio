@@ -237,83 +237,6 @@ textarea:focus {
     animation: slideDown 1s ease-in-out infinite;
 }
 
-/* Services */
-#services {
-    padding: 30px;
-}
-
-.services-items, 
-.skills-items,
-.projects-items {
-    margin: 0 30px 40px;
-}
-
-.services-items {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    
-}
-
-.services-item {
-    padding: 50px 30px;
-    border-radius: 0 10px;
-    box-shadow: 1px 3px 4px 4px rgb(0 0 0 / 20%);
-    text-align: center;
-    background-color: #fff;
-    transform: scale(0);
-    opacity: 0;
-    transition: all .4s ease-in-out;
-}
-
-.services-item.show {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.services-item:hover {
-    transform: scale(.98);
-}
-
-.services-item > i {
-    margin-bottom: 20px;
-    font-size: 50px;
-}
-
-.services > p,
-.skills li {
-    margin-bottom: 15px;
-}
-
-.services > h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.services-title,
-.skills-title,
-.projects-title {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.services-title > h3,
-.skills-title > h3,
-.projects-title > h3 {
-    padding-bottom: 10px;
-    font-size: 36px;
-}
-
-.services-title > div,
-.skills-title > div,
-.projects-title > div {
-    height: 2px;
-    width: 7%;
-    margin: auto;
-    text-align: center;
-    background-color: blue;
-}
-
 /* Skills */
 .skills {
     padding: 30px;
@@ -334,6 +257,36 @@ textarea:focus {
     transform: scale(0);
     opacity: 0;
     transition: all .2s ease-in-out;
+}
+
+.skills-items,
+.projects-items {
+    margin: 0 30px 40px;
+}
+
+.skills li {
+    margin-bottom: 15px;
+}
+
+.skills-title,
+.projects-title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.skills-title > h3,
+.projects-title > h3 {
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+
+.skills-title > div,
+.projects-title > div {
+    height: 2px;
+    width: 7%;
+    margin: auto;
+    text-align: center;
+    background-color: blue;
 }
 
 .skills-item.show {
